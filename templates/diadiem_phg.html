@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ddphong</title>
+    <link href="{{ url_for('static', path='/style/21002174_buoi5.css') }}" rel="stylesheet">
+</head>
+<body>
+    <h2>Địa điểm phòng</h2>
+    <table>
+        <tr>
+            <th>maphg</th>
+            <th>diadiem</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
